@@ -1,0 +1,47 @@
+@import url('../../vendor/normalize.css');
+@import url('../../vendor/fonts/font.css');
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: #202020;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition: 0.6s easy;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.7;
+  transition: 0.6s easy;
+  cursor: pointer;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #dadada;
+}
+
+
+@media screen and (max-width: 598px) {
+  .section__title {
+    font-size: 18px;
+    padding-bottom: 28px;
+  }
+}

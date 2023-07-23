@@ -1,0 +1,86 @@
+.moviecard {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background-color: #222;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.moviecard__conteiner {
+  padding: 14px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moviecard__info {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.moviecard__name {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.moviecard__duration {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 400;
+  color: #8b8b8b;
+}
+
+.moviescard__like {
+  background-image: url(../../images/noactivelike.svg);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.moviescard__like_active {
+  background-image: url(../../images/activelike.svg);
+
+}
+
+.moviescard__delete {
+  background-image: url(../../images/deletelike.svg);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.moviecard__img {
+  width: 364px;
+  height: 203px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@media screen and (max-width: 892px) {
+  .moviecard {
+    max-width: 339px;
+  }
+
+  .moviecard__img {
+    width: 339px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .movie-card {
+    max-width: 300px;
+  }
+
+  .moviecard__img {
+    width: 300px;
+    height: 168px;
+  }
+}
