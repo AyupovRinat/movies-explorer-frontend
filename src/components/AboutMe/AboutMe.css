@@ -1,4 +1,4 @@
-.aboutme {
+.about-me {
   max-width: 1280px;
   margin: 0 auto;
   padding: 110px 70px 0;
@@ -7,11 +7,11 @@
   box-sizing: border-box;
 }
 
-.aboutme__title {
+.about-me__title {
   letter-spacing: -1.2px;
 }
 
-.aboutme__container {
+.about-me__container {
   margin: 0;
   padding: 0;
   padding-top: 66px;
@@ -19,40 +19,43 @@
   justify-content: space-between;
 }
 
-.aboutme__profile {
+.about-me__profile {
   margin: 0;
   max-width: 600px;
 }
 
-.aboutme__name {
+.about-me__name {
+  margin: 0;
   font-size: 50px;
   font-weight: 400;
   line-height: 58px;
 }
 
-.aboutme__job {
+.about-me__job {
+  margin: 0;
   padding-top: 19px;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
 }
 
-.aboutme__description {
+.about-me__description {
+  margin: 0;
   padding-top: 26px;
-  padding-bottom: 119px;
+  padding-bottom: 97px;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
 
-.aboutme__link {
+.about-me__link {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
 }
 
-.aboutme__foto {
+.about-me__img {
   width: 270px;
   height: 327px;
   border-radius: 10px;
@@ -61,83 +64,83 @@
 }
 
 @media screen and (max-width: 1061px) {
-  .aboutme__profile {
+  .about-me__profile {
     margin-right: 49px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .aboutme {
-    padding: 90px 50px 0;
+  .about-me {
+    padding: 93px 50px 0;
   }
 
-  .aboutme__profile {
+  .about-me__profile {
     margin-right: 49px;
   }
 
-  .aboutme__name {
+  .about-me__name {
     margin: 0;
     font-size: 40px;
     line-height: 40px;
     display: block;
   }
 
-  .aboutme__job {
+  .about-me__job {
     padding-top: 16px;
     font-size: 12px;
     line-height: 18px;
   }
 
-  .aboutme__description {
-    padding: 20px 0 104px;
+  .about-me__description {
+    padding: 20px 0 87px;
     font-size: 12px;
     line-height: 18px;
   }
 
-  .aboutme__foto {
+  .about-me__img {
     width: 255px;
     height: 307px;
   }
 }
 
 @media screen and (max-width: 598px) {
-  .aboutme {
-    padding: 70px 14px 0;
+  .about-me {
+    padding: 74px 14px 0;
   }
 
-  .aboutme__title {
+  .about-me__title {
     letter-spacing: -0.7px;
     padding-bottom: 28px;
   }
 
-  .aboutme__container {
+  .about-me__container {
     padding-top: 60px;
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  .aboutme__profile {
+  .about-me__profile {
     padding-top: 40px;
   }
 
-  .aboutme__name {
+  .about-me__name {
     font-size: 30px;
     line-height: normal;
   }
 
-  .aboutme__job {
+  .about-me__job {
     padding-top: 19px;
     font-size: 11px;
     line-height: 16px;
   }
 
-  .aboutme__description {
-    padding-bottom: 55px;
+  .about-me__description {
+    padding-bottom: 38px;
     font-size: 11px;
     line-height: 16px;
   }
 
-  .aboutme__foto {
+  .about-me__img {
     padding: 0;
     display: flex;
     align-items: center;

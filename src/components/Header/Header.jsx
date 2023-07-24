@@ -9,7 +9,7 @@ const pathname = useLocation().pathname;
 
   return (
     <header className={`header ${pathname==='/' ? 'header__promo' : ''}`}>
-      <Link className='header__logo' to='/'></Link>
+      <Link className='header__logo button' to='/'></Link>
       <Navigation loggedIn={loggedIn} />
     </header>
   )

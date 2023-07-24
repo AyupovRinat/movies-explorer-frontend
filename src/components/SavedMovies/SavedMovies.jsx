@@ -8,8 +8,8 @@ import './SavedMovies.css';
 function SavedMovies({ loggedIn }) {
   return (
     <>
-     <Header loggedIn={!loggedIn} />
-      <main className='savedmovies'>
+      <Header loggedIn={!loggedIn} />
+      <main className='saved-movies'>
         <SearchForm />
         <MoviesCardList />
       </main>

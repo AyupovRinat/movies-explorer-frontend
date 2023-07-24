@@ -3,12 +3,12 @@ import './NavTab.css'
 
 function NavTab() {
   return (
-    <section className='navtab'>
-      <nav className='navtab__links'>
-        <ul className='navtab__list'>
-          <li className='navtab__link'><a href='#aboutproject' className='navtab__link link'>О проекте</a></li>
-          <li className='navtab__link'><a href='#techs' className='navtab__link link'>Технологии</a></li>
-          <li className='navtab__link'><a href='#aboutme' className='navtab__link link'>Студент</a></li>
+    <section className='nav-tab'>
+      <nav className='nav-tab__links'>
+        <ul className='nav-tab__list'>
+          <li className='nav-tab__link'><a href='#aboutproject' className='nav-tab__link link'>О проекте</a></li>
+          <li className='nav-tab__link'><a href='#techs' className='nav-tab__link link'>Технологии</a></li>
+          <li className='nav-tab__link'><a href='#aboutme' className='nav-tab__link link'>Студент</a></li>
         </ul>
       </nav>
     </section>

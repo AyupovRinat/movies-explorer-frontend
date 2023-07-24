@@ -7,6 +7,10 @@
   min-width: 320px;
   background-color: #202020;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Inter', Arial, sans-serif;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -19,14 +23,20 @@
 
 .button:hover {
   opacity: 0.7;
-  transition: 0.6s easy;
+  transition: all .8s ease 0s;
   cursor: pointer;
 }
 
 .link:hover {
   opacity: 0.7;
-  transition: 0.6s easy;
+  transition: all .8s ease 0s;
   cursor: pointer;
+}
+
+.input:focus {
+  background-color: #000;
+  transition: all .8s ease 0s;
+  outline: 2px solid #ffd700;
 }
 
 .section__title {

@@ -1,30 +1,30 @@
-.aboutproject {
+.about-project {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 110px 70px;
+  padding: 114px 70px 110px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
-.aboutproject__title {
+.about-project__title {
   letter-spacing: -0.6px;
 }
 
-.aboutproject__container {
+.about-project__container {
   display: flex;
-  gap: 30px;
+  gap: 52px;
   justify-content: space-between;
   padding: 70px 0 111px;
 }
 
-.aboutproject__discription {
+.about-project__description {
   max-width: 550px;
   margin: 0;
   padding: 0;
 }
 
-.aboutproject__subtitle {
+.about-project__subtitle {
   margin: 0;
   padding-bottom: 27px;
   font-size: 20px;
@@ -32,44 +32,44 @@
   letter-spacing: -0.75px;
 }
 
-.aboutproject__text {
+.about-project__text {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
-.aboutproject__shedule {
+.about-project__shedule {
   margin: 0;
   display: flex;
   text-align: center;
 }
 
-.aboutproject__back {
+.about-project__back {
   width: 25%;
 }
 
-.aboutproject__front {
+.about-project__front {
   width: 99%;
 }
 
-.aboutproject__shedule-title {
+.about-project__shedule-title {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
   padding: 9px 0;
 }
 
-.aboutproject__shedule-title_back {
+.about-project__shedule-title_back {
   background-color: #3ddc84;
   color: #000;
 }
 
-.aboutproject__shedule-title_front {
+.about-project__shedule-title_front {
   background-color: #303030;
 }
 
-.aboutproject__shedule-caption {
+.about-project__shedule-caption {
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
@@ -79,70 +79,71 @@
 }
 
 @media screen and (max-width: 768px) {
-  .aboutproject {
-    padding: 90px 50px;
+  .about-project {
+    padding: 93px 50px;
   }
 
-  .aboutproject__container {
+  .about-project__container {
     padding-bottom: 94px;
+    gap: 35px;
   }
 
-  .aboutproject__subtitle {
+  .about-project__subtitle {
     padding-bottom: 24px;
   }
 
-  .aboutproject__discription {
+  .about-project__description {
     max-width: 284px;
   }
 
-  .aboutproject__text {
+  .about-project__text {
     font-size: 12px;
     line-height: 18px;
   }
 
-  .aboutproject__back {
+  .about-project__back {
     width: 26%;
   }
 }
 
 @media screen and (max-width: 598px) {
-  .aboutproject {
-    padding: 70px 18px;
+  .about-project {
+    padding: 73px 18px;
   }
 
-  .aboutproject__title {
+  .about-project__title {
     padding-bottom: 30px;
   }
 
-  .aboutproject__container {
+  .about-project__container {
     flex-direction: column;
     row-gap: 57px;
     padding: 62px 0 60px;
   }
 
-  .aboutproject__subtitle {
+  .about-project__subtitle {
     padding-right: 0px;
     font-size: 18px;
     letter-spacing: -0.75px;
     padding-bottom: 17px;
   }
 
-  .aboutproject__text {
+  .about-project__text {
     padding-right: 0px;
     font-size: 11px;
     line-height: 16px;
   }
 
-  .aboutproject__shedule-title {
+  .about-project__shedule-title {
     font-size: 11px;
     padding: 11px 0;
   }
 
-  .aboutproject__back {
+  .about-project__back {
     width: 54%;
   }
 
-  .aboutproject__shedule-caption {
+  .about-project__shedule-caption {
     font-family: "Suisse Intl", "Arial", sans-serif;
     font-size: 11px;
     line-height: 17px;

@@ -11,68 +11,84 @@ function MoviesCard(props) {
 
   return (
     <>
-      <li className='moviecard'>
-        <div className='moviecard__conteiner'>
-          <div className='moviecard__info'>
-            <h2 className='moviecard__name'>33 слова о дизайне</h2>
-            <p className='moviecard__duration'>1ч 47м</p>
+      <li className='movie-card'>
+        <div className='movie-card__container'>
+          <div className='movie-card__info'>
+            <h2 className='movie-card__name'>33 слова о дизайне</h2>
+            <p className='movie-card__duration'>1ч 47м</p>
           </div>
           {pathname === '/movies' ? (
-            <button className='moviescard__like button' type='button'></button>
+            <button className='movie-card__like button' type='button'></button>
           ) : (
-            <button className='moviescard__delete button' type='button'></button>
+            <button className='movie-card__delete button' type='button'></button>
           )}
         </div>
-        <a href="https://youtu.be/4JTaNzBStD8" className='moviecard__link link' target="blank">
-          <img className='moviecard__img' src={PictureOne} alt='Кадр из фильма' />
+        <a href="https://youtu.be/4JTaNzBStD8" className='movie-card__link link' target="blank">
+          <img className='movie-card__img' src={PictureOne} alt='Люди рядом с автомобилем' />
         </a>
       </li >
-      <li className='moviecard'>
-        <div className='moviecard__conteiner'>
-          <div className='moviecard__info'>
-            <h2 className='moviecard__name'>33 слова о дизайне</h2>
-            <p className='moviecard__duration'>1ч 47м</p>
+      <li className='movie-card'>
+        <div className='movie-card__container'>
+          <div className='movie-card__info'>
+            <h2 className='movie-card__name'>33 слова о дизайне</h2>
+            <p className='movie-card__duration'>1ч 47м</p>
           </div>
           {pathname === '/movies' ? (
-            <button className='moviescard__like button' type='button'></button>
+            <button className='movie-card__like button' type='button'></button>
           ) : (
-            <button className='moviescard__delete button' type='button'></button>
+            <button className='movie-card__delete button' type='button'></button>
           )}
         </div>
-        <a href="https://youtu.be/4JTaNzBStD8" className='moviecard__link link' target="blank">
-          <img className='moviecard__img' src={PictureTwo} alt='Кадр из фильма' />
+        <a href="https://youtu.be/4JTaNzBStD8" className='movie-card__link link' target="blank">
+          <img className='movie-card__img' src={PictureTwo} alt='Мужчина в очках' />
         </a>
       </li >
-      <li className='moviecard'>
-        <div className='moviecard__conteiner'>
-          <div className='moviecard__info'>
-            <h2 className='moviecard__name'>33 слова о дизайне</h2>
-            <p className='moviecard__duration'>1ч 47м</p>
+      <li className='movie-card'>
+        <div className='movie-card__container'>
+          <div className='movie-card__info'>
+            <h2 className='movie-card__name'>33 слова о дизайне</h2>
+            <p className='movie-card__duration'>1ч 47м</p>
           </div>
           {pathname === '/movies' ? (
-            <button className='moviescard__like moviescard__like_active button' type='button'></button>
+            <button className='movie-card__like movie-card__like_active button' type='button'></button>
           ) : (
-            <button className='moviescard__delete button' type='button'></button>
+            <button className='movie-card__delete button' type='button'></button>
           )}
         </div>
-        <a href="https://youtu.be/4JTaNzBStD8" className='moviecard__link link' target="blank">
-          <img className='moviecard__img' src={PictureThree} alt='Кадр из фильма' />
+        <a href="https://youtu.be/4JTaNzBStD8" className='movie-card__link link' target="blank">
+          <img className='movie-card__img' src={PictureThree} alt='Зал с колоннами' />
         </a>
       </li >
-      <li className='moviecard'>
-        <div className='moviecard__conteiner'>
-          <div className='moviecard__info'>
-            <h2 className='moviecard__name'>33 слова о дизайне</h2>
-            <p className='moviecard__duration'>1ч 47м</p>
+      <li className='movie-card'>
+        <div className='movie-card__container'>
+          <div className='movie-card__info'>
+            <h2 className='movie-card__name'>33 слова о дизайне</h2>
+            <p className='movie-card__duration'>1ч 47м</p>
           </div>
           {pathname === '/movies' ? (
-            <button className='moviescard__like button' type='button'></button>
+            <button className='movie-card__like button' type='button'></button>
           ) : (
-            <button className='moviescard__delete button' type='button'></button>
+            <button className='movie-card__delete button' type='button'></button>
           )}
         </div>
-        <a href="https://youtu.be/4JTaNzBStD8" className='moviecard__link link' target="blank">
-          <img className='moviecard__img' src={PictureFour} alt='Кадр из фильма' />
+        <a href="https://youtu.be/4JTaNzBStD8" className='movie-card__link link' target="blank">
+          <img className='movie-card__img' src={PictureFour} alt='Мик Джагер' />
+        </a>
+      </li >
+      <li className='movie-card'>
+        <div className='movie-card__container'>
+          <div className='movie-card__info'>
+            <h2 className='movie-card__name'>33 слова о дизайне</h2>
+            <p className='movie-card__duration'>1ч 47м</p>
+          </div>
+          {pathname === '/movies' ? (
+            <button className='movie-card__like button' type='button'></button>
+          ) : (
+            <button className='movie-card__delete button' type='button'></button>
+          )}
+        </div>
+        <a href="https://youtu.be/4JTaNzBStD8" className='movie-card__link link' target="blank">
+          <img className='movie-card__img' src={PictureFour} alt='Мик Джагер' />
         </a>
       </li >
     </>

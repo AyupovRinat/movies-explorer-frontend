@@ -1,11 +1,11 @@
-.searchform {
+.search-form {
   max-width: 1280px;
   padding: 70px 70px 0px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-.searchform__form {
+.search-form__form {
   padding: 19px 30px 19px 19px;
   background-color: #222222;
   border-radius: 9px;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.searchform__search {
+.search-form__search {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@
   border-right: 1px solid #505050;
 }
 
-.searchform__button {
+.search-form__button {
   margin: 0;
   padding: 0;
   background-image: url(../../images/find.svg);
@@ -37,7 +37,7 @@
   height: 34px;
 }
 
-.searchform__label {
+.search-form__label {
   padding: 0;
   padding-right: 15px;
   background-image: url(../../images/iconloupe.svg);
@@ -47,7 +47,7 @@
   height: 34px;
 }
 
-.searchform__input {
+.search-form__input {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@
   color: #fff;
 }
 
-.searchform__border {
+.search-form__border {
   padding: 0;
   padding-top: 69px;
   margin: 0;
@@ -67,37 +67,37 @@
 }
 
 @media screen and (max-width: 768px) {
-.searchform {
-  padding: 78px 30px 0px;
+.search-form {
+  padding: 74px 30px 0px;
 }
 
-.searchform__form {
+.search-form__form {
 padding-right: 20px;
 }
 
-.searchform__label {
+.search-form__label {
   padding: 0;
   padding-right: 16px;
 }
 
-.searchform__border {
+.search-form__border {
   padding-top: 109px;
 }
 }
 
 @media screen and (max-width: 598px) {
-  .searchform {
-    padding: 73px 10px 0px;
+  .search-form {
+    padding: 70px 10px 0px;
   }
 
-  .searchform__form {
+  .search-form__form {
     padding: 0;
     background-color: #202020;
     flex-direction: column;
     gap: 41px;
   }
 
-  .searchform__search {
+  .search-form__search {
     padding-right: 0px;
     padding: 25px 0px;
     background-color: #222222;
@@ -105,21 +105,21 @@ padding-right: 20px;
     border-right: none;
   }
 
-  .searchform__label {
+  .search-form__label {
     display: none;
   }
 
-  .searchform__input {
+  .search-form__input {
     width: 100%;
     font-size: 14px;
     padding-left: 19px;
   }
 
-  .searchform__button {
+  .search-form__button {
     padding-right: 72px;
   }
 
-  .searchform__border {
-    padding-top: 44px;
+  .search-form__border {
+    padding-top: 45px;
   }
 }

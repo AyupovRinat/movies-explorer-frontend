@@ -1,6 +1,6 @@
 .techs {
   max-width: 1280px;
-  padding: 100px 70px 110px;
+  padding: 102px 70px 100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 768px) {
   .techs {
-    padding: 90px 50px;
+    padding: 89px 50px;
   }
 
   .techs__title {
@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 598px) {
   .techs {
-    padding: 70px 18px;
+    padding: 67px 18px;
   }
 
   .techs__title {

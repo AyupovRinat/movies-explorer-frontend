@@ -12,16 +12,16 @@ import Header from '../Header/Header';
 function Main({ loggedIn }) {
   return (
     <>
+    <Header loggedIn={loggedIn}/>
       <main className='main'>
-        <Header loggedIn={loggedIn}/>
         <Promo />
         <NavTab />
         <AboutProject />
         <Techs />
         <AboutMe />
         <Portfolio />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

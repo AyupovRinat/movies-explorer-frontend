@@ -20,15 +20,30 @@ function App() {
     navigate(-1);
   };
 
+  function handleLogin() {
+    setLoggedIn(true);
+    navigate('/movies');
+  }
+
+  function handleRegister() {
+    setLoggedIn(true);
+    navigate('/signin');
+  }
+
+  function handleSingOut() {
+    setLoggedIn(false);
+    navigate('/');
+  }
+
   return (
     <div className='app'>
       <Routes>
-        <Route path='/' loggedIn={loggedIn} element={<Main />} />
-        <Route path='/movies' loggedIn={loggedIn} element={<Movies />} />
-        <Route path='/saved-movies' loggedIn={loggedIn} element={<SavedMovies />} />
-        <Route path='/sign-in' element={<Login />} />
-        <Route path='/sign-up' element={<Register />} />
-        <Route path='/profile' loggedIn={loggedIn} element={<Profile />} />
+        <Route path='/' element={<Main loggedIn={loggedIn} />} />
+        <Route path='/movies' element={<Movies loggedIn={loggedIn} />} />
+        <Route path='/saved-movies' element={<SavedMovies loggedIn={loggedIn} />} />
+        <Route path='/signin' element={<Login onLogin={handleLogin} />} />
+        <Route path='/signup' element={<Register onRegister={handleRegister} />} />
+        <Route path='/profile' element={<Profile loggedIn={loggedIn} onSignOut={handleSingOut} />} />
         <Route path='*' element={<NotFound onBack={goBack} />} />
       </Routes>
     </div>

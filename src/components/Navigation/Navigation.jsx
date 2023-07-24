@@ -18,8 +18,8 @@ function Navigation({ loggedIn }) {
     <>
       {!loggedIn ? (
         <nav className='nav__auth'>
-          <NavLink className='nav__link link' to='/sign-up'>Регистрация</NavLink>
-          <NavLink className='nav__link nav__login link' to='/sign-in'>Войти</NavLink>
+          <NavLink className='nav__link link' to='/signup'>Регистрация</NavLink>
+          <NavLink className='nav__link nav__login link' to='/signin'>Войти</NavLink>
         </nav>
       ) : (
         <>

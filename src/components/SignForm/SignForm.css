@@ -1,13 +1,14 @@
-.signform {
+.sign-form {
   margin: 0 auto;
   padding: 70px 0;
   background-color: #202020;
   display: flex;
   flex-direction: column;
   max-width: 396px;
+  width: 100%;
 }
 
-.signform_logo {
+.sign-form_logo {
   background-image: url(../../images/logo.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +17,7 @@
   height: 38px;
 }
 
-.signform__title {
+.sign-form__title {
   margin: 0;
   padding: 0;
   padding-top: 41px;
@@ -25,7 +26,7 @@
   color: #fff;
 }
 
-.signform__form {
+.sign-form__form {
   margin: 0;
   padding: 0;
   padding-top: 42px;
@@ -33,7 +34,7 @@
   flex-direction: column;
 }
 
-.signform__input {
+.sign-form__input {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -41,21 +42,21 @@
   gap: 22px;
 }
 
-.signform__input-container {
+.sign-form__input-container {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.signform__input-label {
+.sign-form__input-label {
   font-weight: 400;
   font-size: 10px;
   color: #8b8b8b;
 }
 
 
-.signform__input-text {
+.sign-form__input-text {
   margin: 0;
   padding: 15px 15px;
   font-weight: 400;
@@ -66,11 +67,11 @@
   background-color: #2f2f2f;
 }
 
-.signform__input-password {
+.sign-form__input-password {
   color: #ee3465;
 }
 
-.signform__button {
+.sign-form__button {
   margin: 67px 0 0;
   padding: 13px 0 15px;
   background: #4285f4;
@@ -83,35 +84,35 @@
   border-radius: 3px;
 }
 
-.signform__button-login {
+.sign-form__button-login {
   margin: 167px 0 0;
 }
 
-.signform__links-container {
+.sign-form__links-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
 }
 
-.signform__links {
+.sign-form__links {
   padding-top: 17px;
 }
 
-.signform__link-text {
+.sign-form__link-text {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   color: #8b8b8b;
 }
 
-.signform__link {
+.sign-form__link {
   font-weight: 400;
   font-size: 14px;
   color: #4285f4;
 }
 
-.signform__span {
+.sign-form__span {
   padding-top: 3px;
   font-weight: 400;
   font-size: 10px;
@@ -119,64 +120,64 @@
 }
 
 @media screen and (max-width: 768px) {
-  .signform {
+  .sign-form {
     padding: 232px 0;
   }
 
-  .signform__form {
+  .sign-form__form {
     padding-top: 42px;
   }
 
-  .signform__title {
+  .sign-form__title {
     padding-top: 40px;
     letter-spacing: 0px;
   }
 
-  .signform__button-login {
+  .sign-form__button-login {
     margin: 168px 0 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .signform {
+  .sign-form {
     padding: 56px 0 30px;
     align-items: center;
   }
 
-  .signform__title {
+  .sign-form__title {
     padding-top: 50px;
   }
 
-  .signform__span {
+  .sign-form__span {
     padding-top: 2px;
   }
 
-  .signform__input {
+  .sign-form__input {
     width: 260px;
   }
 
-  .signform__button {
+  .sign-form__button {
     margin-top: 157px;
     font-size: 12px;
   }
 
-  .signform__button-login {
+  .sign-form__button-login {
     margin: 258px 0 0;
   }
 
-  .signform__links {
+  .sign-form__links {
     padding-top: 16px;
   }
 
-  .signform__link-text {
+  .sign-form__link-text {
     font-size: 12px;
   }
 
-  .signform__link {
+  .sign-form__link {
     font-size: 12px;
   }
 
-  .signform__form {
+  .sign-form__form {
     padding-top: 82px;
   }
 }

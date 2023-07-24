@@ -4,11 +4,11 @@ import './MoviesCardList.css';
 
 function MoviesCardList(props) {
   return (
-    <section className='moviescards'>
-      <ul className='moviescards__list'>
+    <section className='movies-cards'>
+      <ul className='movies-cards__list'>
         <MoviesCard />
       </ul>
-      <button type='button' className='movies__add-button button'>Ещё</button>
+      <button type='button' className='movies-cards__add-button button'>Ещё</button>
     </section>
   );
 };
