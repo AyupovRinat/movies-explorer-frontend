@@ -3,14 +3,14 @@ import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import Navigation from '../Navigation/Navigation'
 
-function Header({ loggedIn }) {
+function Header({ isLoggedIn }) {
 
 const pathname = useLocation().pathname;
 
   return (
     <header className={`header ${pathname==='/' ? 'header__promo' : ''}`}>
       <Link className='header__logo button' to='/'></Link>
-      <Navigation loggedIn={loggedIn} />
+      <Navigation isLoggedIn={isLoggedIn} />
     </header>
   )
 }

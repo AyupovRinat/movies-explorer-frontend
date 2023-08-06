@@ -32,6 +32,21 @@
   padding-top: 42px;
   display: flex;
   flex-direction: column;
+  max-height: 410px;
+  height: 50vh;
+  justify-content: space-between;
+}
+
+.sign-forn__error {
+  width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FF004C;
+  vertical-align: bottom;
+  margin-bottom: 21px;
 }
 
 .sign-form__input {
@@ -39,7 +54,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 22px;
+  gap: 6px;
 }
 
 .sign-form__input-container {
@@ -65,16 +80,14 @@
   border: none;
   border-radius: 8px;
   background-color: #2f2f2f;
+  transition: color .3s;
 }
 
-.sign-form__input-password {
-  color: #ee3465;
-}
 
 .sign-form__button {
-  margin: 67px 0 0;
+  margin: 0 0 16px;
   padding: 13px 0 15px;
-  background: #4285f4;
+  background-color: #4285f4;
   border: none;
   font-style: normal;
   font-weight: 500;
@@ -82,10 +95,8 @@
   text-align: center;
   color: #fff;
   border-radius: 3px;
-}
-
-.sign-form__button-login {
-  margin: 167px 0 0;
+  width: 100%;
+  transition: background-color .3s ease-in-out;
 }
 
 .sign-form__links-container {
@@ -104,24 +115,20 @@
   font-weight: 400;
   font-size: 14px;
   color: #8b8b8b;
+  text-align: center;
 }
 
 .sign-form__link {
   font-weight: 400;
   font-size: 14px;
   color: #4285f4;
-}
-
-.sign-form__span {
-  padding-top: 3px;
-  font-weight: 400;
-  font-size: 10px;
-  color: #ee3465;
+  text-decoration: none;
+  margin-left: 6px;
 }
 
 @media screen and (max-width: 768px) {
   .sign-form {
-    padding: 232px 0;
+    padding: 232px 0 0;
   }
 
   .sign-form__form {
@@ -133,9 +140,6 @@
     letter-spacing: 0px;
   }
 
-  .sign-form__button-login {
-    margin: 168px 0 0;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -144,12 +148,9 @@
     align-items: center;
   }
 
+
   .sign-form__title {
     padding-top: 50px;
-  }
-
-  .sign-form__span {
-    padding-top: 2px;
   }
 
   .sign-form__input {
@@ -157,12 +158,7 @@
   }
 
   .sign-form__button {
-    margin-top: 157px;
     font-size: 12px;
-  }
-
-  .sign-form__button-login {
-    margin: 258px 0 0;
   }
 
   .sign-form__links {
@@ -179,5 +175,7 @@
 
   .sign-form__form {
     padding-top: 82px;
+    max-height: 630px;
+    height: 85vh;
   }
 }
