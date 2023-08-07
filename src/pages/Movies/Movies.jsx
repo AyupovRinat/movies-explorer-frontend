@@ -38,7 +38,7 @@ function Movies({ pullAllMovies, ...props }) {
   const handleAddMoreMovies = () => {
     const movieLack = displayedMoviesNumbers % addMoreMoviesNumbers;
 
-    if (movieLack !== 0) {
+    if (movieLack !== 0 && width >= SCREEN_WIDTH.M) {
       setDisplayedMoviesNumbers(displayedMoviesNumbers + (addMoreMoviesNumbers - movieLack));
       return;
     }
@@ -58,7 +58,7 @@ function Movies({ pullAllMovies, ...props }) {
       setAddMoreMoviesNumbers(ADD_COUNT.L);
       setStartMoviesNumbers(START_MOVIES_NUMBERS.L);
       return;
-    } else if (width >= SCREEN_WIDTH.M ) {
+    } else if (width >= SCREEN_WIDTH.M) {
       setStartMoviesNumbers(START_MOVIES_NUMBERS.M);
     } else {
       setStartMoviesNumbers(START_MOVIES_NUMBERS.S);

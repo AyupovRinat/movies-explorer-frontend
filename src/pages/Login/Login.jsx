@@ -20,6 +20,7 @@ function Login({ onLogin, serverMessage, isLoggedIn }) {
         disableForm={!isValidForm}
         serverMessage={serverMessage}
         onSubmit={() => onLogin({ email: email.value, password: password.value })}
+        isLoggedIn={isLoggedIn}
       >
         <div className='sign-form__input-container'>
           <label className='sign-form__input-label' htmlFor="email">E-mail</label>

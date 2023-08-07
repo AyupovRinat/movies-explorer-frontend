@@ -11,7 +11,7 @@ function SignForm({ title, textButton, question, linkText, linkPath, children, d
     onSubmit().finally(() => setIsRequesting(false))
   };
   
-  if (isLoggedIn) return <Navigate to='/' replace />
+  if (isLoggedIn) return (<Navigate to='/' replace />);
 
   return (
     <section className='sign-form'>

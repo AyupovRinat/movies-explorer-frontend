@@ -11,7 +11,7 @@ function MoviePage({isLoggedIn, movies, displayedMovies, setMovies, onFirstSearc
 	const [filteredMovies, setFilteredMovies] = useState([]);
 	const [findedMovies, setFindedMovies] = useState([]);
   const [isShortMovies, setIsShortMovies] = useState(false);
-
+	
 	const { pathname } = useLocation();
 
   const searchInput = useInput('', validationMoviesInputParams);
@@ -26,7 +26,7 @@ function MoviePage({isLoggedIn, movies, displayedMovies, setMovies, onFirstSearc
 		const newFindedMovies = movies.filter((movie) => movie.nameEN.toLowerCase().includes(value.toLowerCase())
 			|| movie.nameRU.toLowerCase().includes(value.toLowerCase()));
 		setFindedMovies(newFindedMovies);
-
+		
 		if (pathname === '/movies') {
 			localStorage.setItem('previousResult', JSON.stringify(newFindedMovies));
 			localStorage.setItem('previousInput', searchInput.value);
@@ -37,13 +37,13 @@ function MoviePage({isLoggedIn, movies, displayedMovies, setMovies, onFirstSearc
 		return newFindedMovies;
 	}
 
-
+	
 	const filterMovies = () => {
 		if (pathname === '/movies' && searchInput.value.trim().length === 0) {
 			giveMovieAdvice(movieAdvice.enterKeyword);
 			return;
 		}
-
+		
 		if (isFirstSearch && pathname === '/movies') {
 			onFirstSearch();
 			return;
@@ -56,8 +56,8 @@ function MoviePage({isLoggedIn, movies, displayedMovies, setMovies, onFirstSearc
 		if (isFirstSearch) return;
 		const newFilteredMovies = findMovies(searchInput.value, isShortMovies);
 		setFilteredMovies(newFilteredMovies);
-	}, [movies]);
-
+	}, [movies, isFirstSearch]);
+		
 	useEffect(() => {
 		// идёт фильтрация короткого метра по чекбоксу, но не поиск
 		if (isFirstSearch) return;
@@ -65,7 +65,7 @@ function MoviePage({isLoggedIn, movies, displayedMovies, setMovies, onFirstSearc
 		const newFilteredMovies =  isShortMovies ? showShortMovies(findedMovies) : findedMovies;
 		setFilteredMovies(newFilteredMovies);
 	}, [isShortMovies])
-
+	
 	useEffect(() => {
 		if (pathname !== '/movies') return;
 		if (!isFirstSearch && displayedMovies.length === 0) {
@@ -82,7 +82,7 @@ function MoviePage({isLoggedIn, movies, displayedMovies, setMovies, onFirstSearc
 			return;
 		}
 		filterMovies();
-
+	
 		}, [])
 
 	return (
