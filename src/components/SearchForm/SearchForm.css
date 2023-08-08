@@ -1,0 +1,125 @@
+.search-form {
+  max-width: 1280px;
+  padding: 70px 70px 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.search-form__form {
+  padding: 19px 30px 19px 19px;
+  background-color: #222222;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.search-form__search {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 19px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-right: 1px solid #505050;
+}
+
+.search-form__button {
+  margin: 0;
+  padding: 0;
+  background-image: url(../../images/find.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 41px;
+  height: 34px;
+}
+
+.search-form__label {
+  padding: 0;
+  padding-right: 15px;
+  background-image: url(../../images/iconloupe.svg);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  width: 34px;
+  height: 34px;
+}
+
+.search-form__input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+
+.search-form__border {
+  padding: 0;
+  padding-top: 69px;
+  margin: 0;
+  border-bottom: 1px solid #424242;
+}
+
+@media screen and (max-width: 768px) {
+.search-form {
+  padding: 74px 30px 0px;
+}
+
+.search-form__form {
+padding-right: 20px;
+}
+
+.search-form__label {
+  padding: 0;
+  padding-right: 16px;
+}
+
+.search-form__border {
+  padding-top: 109px;
+}
+}
+
+@media screen and (max-width: 598px) {
+  .search-form {
+    padding: 70px 10px 0px;
+  }
+
+  .search-form__form {
+    padding: 0;
+    background-color: #202020;
+    flex-direction: column;
+    gap: 41px;
+  }
+
+  .search-form__search {
+    padding-right: 0px;
+    padding: 25px 0px;
+    background-color: #222222;
+    border-radius: 9px;
+    border-right: none;
+  }
+
+  .search-form__label {
+    display: none;
+  }
+
+  .search-form__input {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 19px;
+  }
+
+  .search-form__button {
+    padding-right: 72px;
+  }
+
+  .search-form__border {
+    padding-top: 45px;
+  }
+}

@@ -1,0 +1,153 @@
+.about-project {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 114px 70px 110px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.about-project__title {
+  letter-spacing: -0.6px;
+}
+
+.about-project__container {
+  display: flex;
+  gap: 52px;
+  justify-content: space-between;
+  padding: 70px 0 111px;
+}
+
+.about-project__description {
+  max-width: 550px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-project__subtitle {
+  margin: 0;
+  padding-bottom: 27px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.75px;
+}
+
+.about-project__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.about-project__shedule {
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
+
+.about-project__back {
+  width: 25%;
+}
+
+.about-project__front {
+  width: 99%;
+}
+
+.about-project__shedule-title {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 9px 0;
+}
+
+.about-project__shedule-title_back {
+  background-color: #3ddc84;
+  color: #000;
+}
+
+.about-project__shedule-title_front {
+  background-color: #303030;
+}
+
+.about-project__shedule-caption {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #8b8b8b;
+  margin: 0;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-project {
+    padding: 93px 50px;
+  }
+
+  .about-project__container {
+    padding-bottom: 94px;
+    gap: 35px;
+  }
+
+  .about-project__subtitle {
+    padding-bottom: 24px;
+  }
+
+  .about-project__description {
+    max-width: 284px;
+  }
+
+  .about-project__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-project__back {
+    width: 26%;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .about-project {
+    padding: 73px 18px;
+  }
+
+  .about-project__title {
+    padding-bottom: 30px;
+  }
+
+  .about-project__container {
+    flex-direction: column;
+    row-gap: 57px;
+    padding: 62px 0 60px;
+  }
+
+  .about-project__subtitle {
+    padding-right: 0px;
+    font-size: 18px;
+    letter-spacing: -0.75px;
+    padding-bottom: 17px;
+  }
+
+  .about-project__text {
+    padding-right: 0px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-project__shedule-title {
+    font-size: 11px;
+    padding: 11px 0;
+  }
+
+  .about-project__back {
+    width: 54%;
+  }
+
+  .about-project__shedule-caption {
+    font-family: "Suisse Intl", "Arial", sans-serif;
+    font-size: 11px;
+    line-height: 17px;
+    color: #8b8b8b;
+    padding-top: 8px;
+  }
+}
