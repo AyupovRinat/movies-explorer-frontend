@@ -19,6 +19,7 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  height: 100%;
 }
 
 .button:hover {
@@ -33,11 +34,36 @@
   cursor: pointer;
 }
 
-.input:focus {
+.input:focus, .label:focus-within {
+  padding-inline: 5px;
+  border-radius: 5px;
   background-color: #000;
-  transition: all .8s ease 0s;
+  transition: all .3s ease 0s;
   outline: 2px solid #ffd700;
 }
+
+.input_invalid {
+  color: #ee3465;
+  transition: all .3s ease 0s;
+}
+
+
+.input-error {
+  padding-top: 3px;
+  font-weight: 400;
+  font-size: 10px;
+  min-height: 12px;
+  color: #ee3465;
+  height: 12px;
+  width: 100%;
+}
+
+.button:disabled, .input:disabled {
+  opacity: 1;
+  cursor: default;
+  background-color: #8B8B8B;
+}
+
 
 .section__title {
   margin: 0;
@@ -48,10 +74,27 @@
   border-bottom: 1px solid #dadada;
 }
 
+.form-error {
+  width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FF004C;
+  vertical-align: bottom;
+  margin-bottom: 21px;
+}
+
 
 @media screen and (max-width: 598px) {
   .section__title {
     font-size: 18px;
     padding-bottom: 28px;
   }
+}
+
+.loader {
+  text-align: center;
+  margin: 200px 0 0;
 }

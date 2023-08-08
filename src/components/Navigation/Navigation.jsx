@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
-function Navigation({ loggedIn }) {
+function Navigation({ isLoggedIn }) {
 
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
@@ -13,10 +13,10 @@ function Navigation({ loggedIn }) {
   function handleCloseSidebar() {
     setSidebarOpen(false);
   }
-
+  
   return (
     <>
-      {!loggedIn ? (
+      {!isLoggedIn ? (
         <nav className='nav__auth'>
           <NavLink className='nav__link link' to='/signup'>Регистрация</NavLink>
           <NavLink className='nav__link nav__login link' to='/signin'>Войти</NavLink>
